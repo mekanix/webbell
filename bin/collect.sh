@@ -17,7 +17,6 @@ else
   env SYSPKG=${SYSPKG} ${PROJECT_ROOT}/services/frontend/bin/collect.sh
 fi
 
-pwd
 rm -rf ${PROJECT_ROOT}/build/*
-cp -r ${PROJECT_ROOT}/services/backend/${backend_app_name}/static "${PROJECT_ROOT}/build/"
+cp -r ${PROJECT_ROOT}/services/backend/static "${PROJECT_ROOT}/build/"
 cp -r ${PROJECT_ROOT}/services/frontend/build/* "${PROJECT_ROOT}/build/"
